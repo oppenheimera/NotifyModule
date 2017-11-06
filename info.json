@@ -1,0 +1,8 @@
+{
+    "ACCOUNT": "YOURACCOUNT@gmail.com",
+    "PASSWORD": "YOUR PASSWORD",
+    "GATEWAY": "vzwpix.com",
+    "RECIPIENT": "YOUR 10-DIGIT PHONE NUMBER",
+    "SMTP_SERVER": "smtp.gmail.com",
+    "PORT": 587
+}
