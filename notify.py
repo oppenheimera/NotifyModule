@@ -26,7 +26,7 @@ def notify(func):
     def inefficient_code(n=28433):
       big_num = n * efficient_exponenentiation(2, 7830457) + 1
       return str(big_num)[-10:]
-    In which case, a text message might appear, notifying you something like: 
+    In which case, a user would recieve a text message like the one below: 
     "Finished running inefficient_code(28433) on your machine.
     Found answer: 8739992577."
     Yay.
