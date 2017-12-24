@@ -2,7 +2,7 @@
 
 Notify is a light-weight utility for task completion notifications in Python. It was designed to be be free of dependencies beyond the standard library, and also to avoid interaction with expensive APIs.
 
-Setup is straigtforward, and is outlined in depth under **Setup**. Notify was intended to be simple and understandable enough that modifications could be easily implemented––although the batteries-included version should suit most needs.
+Setup is straigtforward, and is outlined in some detail under **Setup**. Notify was intended to be simple and understandable enough that modifications could be easily implemented––although the batteries-included version should suit most needs.
 
 ## Usage
 Once set up, notify is used as a decorator function.
@@ -19,12 +19,12 @@ After the code runs, a text message will be sent to you. In this case, the defau
 Finished running 'inefficient_code(28433)' on your machine.
 Found answer: 8739992577.
 ```
-Notify works with an arbitrary number of arguments:
+Notify also works with an arbitrary number of arguments:
 ```python
 @notify
 def find_all_monotonically_increasing(*args)
-    return sum([1 for seq in permutations(*args) if monotonic(seq)]) 
-``` 
+    return sum([1 for seq in permutations(args) if monotonic(seq)]) 
+```
 ## Setup
 To set up Notify, clone this repository into the directory containing the project you wish to add it to. Ultimately, your directory should be structured as such:
 ```
